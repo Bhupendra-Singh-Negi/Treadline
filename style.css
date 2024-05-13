@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px
+}
+#nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+#nav1 .gola{
+    height: 22px;
+    width: 22px;
+    background-color: black;
+    border-radius: 50%;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#nav2 h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+#nav2 h4 span{
+    color: rgb(71, 71, 72);
+    padding-left: 20px;
+}
+#nav2 h3{
+    display: none;
+}
+#menu{
+    display: flex;
+}
+#menu h3{
+    padding-right: 40px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+}
+section{
+    height: calc(100% - 120px);
+    width: 100%;
+    /* background-color: aqua; */
+}
+#text-content{
+    height: 40%;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 4px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elem h1{
+    font-size: 100px;
+    font-weight: 300;
+}
+#image-content{
+    height: 60%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:750px){
+    nav{
+        /* background-color: red; */
+        padding: 0px 15px
+    }
+    #nav1{
+        gap: 2px;
+    }
+    #nav1 .gola{
+        height: 18px;
+        width: 18px;
+    }
+    #nav2 h4{
+        display: none;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    nav #nav2 h3{
+        display: initial;
+    }
+    nav #nav2 h3 i{
+        font-size: 20px;
+    }
+    #menu h3{
+        padding-right: 10px;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    #text-content{
+        height: 30%;
+    }
+    .elem{
+        width: 90%;
+    }
+    .elem h1{
+        font-size: 62px;
+    }
+
+    #image-content{
+        height: 70%;
+    }
+
+}
